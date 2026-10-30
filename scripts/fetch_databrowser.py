@@ -15,7 +15,7 @@ Counts are the Data Browser's public aggregates (rounded to the nearest 20, whic
 reflects the CDR the Data Browser is built on; see `cdr` in the output).
 
 Output: raw/databrowser_questions.json
-Usage:  python3 survey-inventory/scripts/fetch_databrowser.py
+Usage:  python3 scripts/fetch_databrowser.py
 """
 import concurrent.futures
 import json

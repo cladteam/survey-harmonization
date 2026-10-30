@@ -19,7 +19,7 @@ Sources (all publicly downloadable, no login required):
 ECHOPortal resource IDs change between releases; if a download returns HTML
 instead of a file, re-check the IDs on the Cycle 2 Public Use Data page.
 
-Usage:  python3 survey-inventory/scripts/acquire.py
+Usage:  python3 scripts/acquire.py
 """
 import datetime
 import json

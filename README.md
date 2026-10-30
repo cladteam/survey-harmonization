@@ -16,7 +16,7 @@ co-analysis depends on mapping equivalent variables. See the
 
 | Question | Decision |
 |---|---|
-| Location / format | Top-level `survey-inventory/`, CSV outputs + scripts |
+| Location / format | [`cladteam/survey-harmonization`](https://github.com/cladteam/survey-harmonization) (moved from `mellybelly/all-of-us/survey-inventory`), CSV outputs + scripts |
 | ECHO source | ECHO Cohort Protocol (ECP) v3.2: Measures Master List + public-use codebook (Cycle 2 release, which also carries Cycle 1 tables) |
 | AoU release / tier | Latest CDR, **Controlled Tier**. The AoU Survey Codebook covers every survey fielded in both the Registered and Controlled Tier CDRs and records the per-item privacy rules for each tier |
 | Granularity | Question level **plus** answer options |
@@ -131,16 +131,26 @@ Source instruments relevant to harmonization include:
 | `scripts/prioritize.py` | n/a | scores and ranks AoU↔ECHO pairings → `harmonization_priorities.csv` |
 
 ```bash
-python3 survey-inventory/scripts/acquire.py
+python3 scripts/acquire.py
 ```
 
 ```bash
-python3 survey-inventory/scripts/fetch_databrowser.py
+python3 scripts/fetch_databrowser.py
 ```
 
 ```bash
-python3 survey-inventory/scripts/build_inventory.py
+python3 scripts/fetch_echo_counts.py
 ```
+
+```bash
+python3 scripts/build_inventory.py
+```
+
+```bash
+python3 scripts/prioritize.py
+```
+
+The scripts need Python 3 with `openpyxl`, and poppler's `pdftotext` for the Survey Explorer PDFs.
 
 ## Sources
 

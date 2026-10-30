@@ -7,7 +7,7 @@ every form / derived-variable file with the number of participants who have
 data in the de-identified (DASH / AoU Workbench) release.
 
 Output: raw/echo_platipus_counts.csv
-Usage:  python3 survey-inventory/scripts/fetch_echo_counts.py
+Usage:  python3 scripts/fetch_echo_counts.py
 """
 import csv
 import html

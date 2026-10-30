@@ -11,7 +11,7 @@ Reads the raw data dictionaries fetched by acquire.py and writes:
                          with answer options, linked back to its ECP measure
   harmonization_map.csv  header-only template for the AoU <-> ECHO crosswalk
 
-Usage:  python3 survey-inventory/scripts/build_inventory.py
+Usage:  python3 scripts/build_inventory.py
 """
 import collections
 import csv

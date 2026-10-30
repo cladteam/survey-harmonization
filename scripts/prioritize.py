@@ -26,7 +26,7 @@ Scoring (max 15):
 Tiers: 1 >= 13, 2 = 11-12, 3 <= 10. "core_covariate" marks the sociodemographic
 pairs every co-analysis needs regardless of score.
 
-Usage:  python3 survey-inventory/scripts/prioritize.py
+Usage:  python3 scripts/prioritize.py
 """
 import csv
 import pathlib
